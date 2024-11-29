@@ -1,0 +1,5 @@
+mvn clean - clean:clean tar bort target katalogen
+mvn compile - compiler:compile kompilerar all java källkod i projektet, skapar en target katalog 
+surefire:test kompilerar och kör alla tester i test\java med JUnit
+javadoc:javadoc skapar en Javadoc från källkoden
+mvn package: kör compile, test, skapar och kör jar:jar för att packa filerna i en jar fil i target katalogen
