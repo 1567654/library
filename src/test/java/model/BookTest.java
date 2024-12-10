@@ -10,7 +10,7 @@ class BookTest {
 	@Test
 	public void test2EqualBooks() {
 		Book book = new Book(1, "", "", "", "", 0);
-		assertTrue(book.equals(book));
+		assertTrue(book.equals(new Book(1, "", "", "", "", 0)));
 	}
 
 	//G

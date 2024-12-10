@@ -18,7 +18,7 @@ public class BookCatalogTest {
 	//G
 	@Test
 	public void testAddABook() {
-		bc.addBook(new Book(2,null,"","","",0));
+		assertDoesNotThrow(() -> bc.addBook(new Book(2,null,"","","",0)));
 	}
 
 	//G

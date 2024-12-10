@@ -15,6 +15,6 @@ public class LoanTest {
 		Loan loan = new Loan(0, new Customer("", "", "",
 				"", "", "", 0, GenderType.UNKNOWN),
 					new Book(0, "", "", "", "", 0));
-		assertTrue(loan.getDueDate().isAfter(LocalDate.now()));
+		assertTrue(loan.getDueDate().isEqual(LocalDate.now().plusDays(14)));
    }
 }
